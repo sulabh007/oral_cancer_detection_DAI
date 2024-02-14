@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+
+    <script async defer src="https://apis.google.com/js/api.js"></script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ1ZFKYBEY"></script>
+  
+</head>
+
+<body>
+    <header>
+        <div class="navbar desktop">
+            <div class="logo-div">
+                <a href="#" class="logo">
+                    <img src="../image/istockphoto-1371954970-612x612.jpg" alt="logo" />
+                    <span>Oral Cancer Detection</span>
+                </a>
+            </div>
+            <div class="nav-links topnav" id="myTopnav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">About Us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="navbar mobile">
+            <div class="logo-div">
+                <a href="#" class="logo">
+                    <img src="../image/istockphoto-1371954970-612x612.jpg" alt="logo" />
+                    <span>steganography</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <span class="icon" onclick="toggle_menubar()">
+                            <div class="mobile-menu-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-nav-dropdown">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">About Us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    
+</body>
+<script>
+    function toggle_menubar() {
+        var x = document.getElementsByClassName("mobile-nav-dropdown");
+        x =x[0]
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      } 
+</script>
+</html>
